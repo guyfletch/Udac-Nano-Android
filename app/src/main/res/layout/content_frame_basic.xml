@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_frame_basic" tools:context=".FrameBasic">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TitleLabel"
+        android:text="All my apps:"
+        android:textSize="36dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Film Recommender"
+        android:layout_below="@+id/TitleLabel"
+        android:id="@+id/FilmRecBtn"
+        android:background="#df0a0a"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="FilmRecBtn_Click"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/ScoresBtn"
+        android:background="#0a19df"
+        android:layout_below="@+id/FilmRecBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="ScoresBtn_Click"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/LibraryBtn"
+        android:background="#11df0a"
+        android:layout_below="@+id/ScoresBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="LibraryBtn_Click"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Build it Bigger"
+        android:id="@+id/BuildBigBtn"
+        android:background="#d2df0a"
+        android:layout_below="@+id/LibraryBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="BuildBigBtn_Click"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/XYZReaderBtn"
+        android:background="#a9097a"
+        android:layout_below="@+id/BuildBigBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="XYZReaderBtn_Click"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Capstone: My Own App"
+        android:id="@+id/MyOwnAppBtn"
+        android:background="#b20808"
+        android:layout_below="@+id/XYZReaderBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="MyOwnAppBtn_Click"/>
+
+</RelativeLayout>
